@@ -11,13 +11,11 @@
 #import "Toyota.h"
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        car * nissan = [[car alloc] init];
-        [nissan setModel:@"Rogue"];
-        NSLog(@"this is %@",[nissan model]);
+        car * nissan =[[car alloc] initWithModel:@"Rogue"];
+        NSLog(@"this is a %@",[nissan model]);
         
-        Toyota * toyota =[[Toyota alloc]init];
-        [toyota setModel:@"Prius"];
-        NSLog(@"this is %@",[toyota model]);
+        Toyota * toyota =[[Toyota alloc] initWithModel:@"Prius"];
+        NSLog(@"this is a %@",[toyota model]);
     }
     return 0;
 }

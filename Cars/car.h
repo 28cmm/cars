@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property NSString * model;
 -(void)drive;
+-(instancetype)initWithModel:(NSString*)model;
 @end
 
 NS_ASSUME_NONNULL_END
